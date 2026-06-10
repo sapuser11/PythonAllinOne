@@ -1,0 +1,6 @@
+sap-ai-sdk-core
+pydantic
+langchain
+fastapi
+uvicorn
+python-dotenv

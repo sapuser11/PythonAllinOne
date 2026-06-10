@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "450b9443-4310-45d4-8aec-dc45143ff977",
+		"name": "Anubhav Gen AI Rag App - Ask Anything",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14691148"
+	},
+	"item": [
+		{
+			"name": "Test Basic Service Reponse",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "anubhav",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "anubhavtrainings",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4004/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4004",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New File in Vector DB",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "anubhav",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "anubhavtrainings",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"mediaType\": \"application/json\",\r\n  \"fileName\": \"monopoly.pdf\",\r\n  \"size\": \"1049\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4004/odata/v4/embedding-storage/Files",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4004",
+					"path": [
+						"odata",
+						"v4",
+						"embedding-storage",
+						"Files"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <script src="https://ui5.sap.com/resources/sap-ui-core.js"
+                data-sap-ui-theme="sap_fiori_3_dark"
+                data-sap-ui-libs="sap.m"></script>
+
+        <script>
+            sap.ui.getCore().attachInit(function(){
+                
+                // Add a input field with 100% width
+                const oInp = new sap.m.Input({
+                    placeholder: "Ask about ABAP coding...",
+                    width: "100%"
+                });
+
+                //Send button
+                const oBtn = new sap.m.Button({
+                    text:"Send", 
+                    type: "Emphasized", 
+                    press: sendMessage
+                });
+
+                const oDefaultItem = new sap.m.FeedListItem({
+                    icon: "sap-icon://da-2",
+                    sender: "Assistant",
+                    text: "Hey Amigo! I am your personal ABAP coach, How can i help you today?"
+                });
+
+                // a list to hold the messages and conversation
+                const oList = new sap.m.List("idList",{
+                    items: [oDefaultItem]
+                });
+
+                // Create a page control
+                const oPage = new sap.m.Page({
+                    title: "Anubhav ABAP Coding AI Assistant",
+                    content: [
+                        oList,
+                        new sap.m.Toolbar({
+                            content:[oInp, oBtn]
+                        })
+                    ]
+                });
+
+                const oApp = new sap.m.App({
+                    pages: [oPage]
+                });
+
+                oApp.placeAt("content");
+
+                oInp.attachBrowserEvent("keypress", function(e){
+                    if (e.key === "Enter"){
+                        sendMessage();
+                    }
+                })
+
+                async function sendMessage() {
+                    // Check if something is passed in text
+                    const prompt = oInp.getValue().trim();
+
+                    if(!prompt) return;
+
+                    oList.addItem(new sap.m.FeedListItem({
+                        icon: "sap-icon://employee",
+                        sender: "You",
+                        text: prompt
+                    }));
+
+                    oInp.setValue("")
+                    oBtn.setEnabled(false);
+                    oPage.setBusy(true);
+
+                    try{
+                        const response = await fetch("/chat",{
+                            method: "POST",
+                            headers: {'Content-Type':'application/json'},
+                            body: JSON.stringify({question: prompt})
+                        });
+
+                        const data = await response.json();
+
+                        oList.addItem(new sap.m.FeedListItem({
+                            icon: "sap-icon://da-2",
+                            sender: "Assistant",
+                            text: response.ok ? data.response : 'Error: ' + (data.detail || 'Something is fishy 😒')
+                        }));
+                    }catch{
+                        oList.addItem(new sap.m.FeedListItem({
+                            icon: "sap-icon://da-2",
+                            sender: "Assistant",
+                            text: 'Failed to call the AI 😒'
+                        }));
+                    }finally{
+                        oPage.setBusy(false);
+                        oBtn.setEnabled(true);
+                    }
+
+                    window.sendMessage = sendMessage;
+                    
+
+                }
+
+            })
+        </script>
+    </head>
+    <body class="sapUiBody">
+        <div id="content"></div>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+patient_name,prediction,probability,risk_level
+Alice Johnson,1,0.5024366741429065,Medium Risk
+Mark Williams,1,0.9095612415955259,High Risk
+Lisa Brown,0,0.37049225088062177,Medium Risk
+David Miller,1,0.9616847398465106,High Risk
+Emma Davis,0,0.2954521080582752,Low Risk
+Robert Wilson,1,0.8656088356575992,High Risk
+Sarah Garcia,1,0.6577723991385446,High Risk
+James Martinez,1,0.9392670963325144,High Risk
+Jennifer Lopez,0,0.4226205490522725,Medium Risk
+Michael Anderson,1,0.8613684850784699,High Risk

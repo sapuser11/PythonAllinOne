@@ -1,0 +1,92 @@
+Anubhav Trainings – Company Profile, Course Catalog & Trainers
+
+Abstract of Anubhav Trainings
+    Anubhav Trainings was founded in 2005 with the vision to provide professional training for individuals and corporates on cutting-edge technologies. 
+    The company focuses on programming, architecture, design, and technical development areas, enabling learners to gain industry-relevant expertise. 
+    Over the years, Anubhav Trainings has become a trusted name in delivering practical, hands-on, and project-driven learning experiences that bridge the gap between academic knowledge and enterprise needs.
+
+Vision & Mission
+    - Vision: To empower IT professionals and organizations with next-generation skills that align with the rapidly evolving technology landscape.
+    - Mission: Deliver comprehensive, real-world training that enhances career growth, boosts employability, and drives business transformation through technology adoption.
+
+Training Offerings
+    SAP & Enterprise Technologies
+    - SAP S/4HANA On-Premise & Cloud
+    - SAP Business Technology Platform (BTP)
+    - SAP Fiori & UI5 Development
+    - SAP CAPM (Cloud Application Programming Model)
+    - ABAP on HANA / Embedded Analytics
+    - SAP Build Apps & Process Automation
+
+Corporate Training
+    - Customized programs tailored to organizational needs.
+    - Hands-on workshops for implementation and migration projects.
+    - Delivery via on-site, online, or hybrid modes.
+
+Course fee for different courses along with duration of the course
+    Course Name                               Duration     Mode         Fee (USD)
+    -----------------------------------------------------------------------------
+    SAP S/4HANA Functional Overview            5 weeks      Online Live  $350
+    SAP S/4HANA Technical (ABAP on HANA)       6 weeks      Online Live  $400
+    SAP Fiori & UI5 Development                6 weeks      Online Live  $400
+    SAP Business Technology Platform (BTP)     8 weeks      Online Live  $500
+    SAP CAPM (Cloud Application Prog. Model)   5 weeks      Online Live  $400
+    SAP RAP (Restful Application Programming)  5 weeks      Online Live  $400
+    SAP Build Apps & Process Automation        4 weeks      Online Live  $350
+    Embedded Analytics with CDS Views          5 weeks      Online Live  $375
+    Clean Core & Extensibility in S/4HANA      3 weeks      Workshop     $300
+    SAP GenAI & AI Core                        4 weeks      Online Live  $450
+    SAP Integration Suite & CPI                6 weeks      Online Live  $450
+    SAP APO (Advanced Planning & Optimization) 5 weeks      Online Live  $375
+    Corporate Package (Customized)             Flexible     Onsite/Online On Request
+
+What does course includes:
+    - All courses include recordings, project assignments, and lifetime access to learning portal.
+    - Discounts available for students, referrals, and group enrollments.
+
+Trainers Profile and Expertise
+    Anubhav Trainings is backed by industry veterans with strong consulting backgrounds and global project experience. Each trainer brings 10–20 years of domain expertise.
+
+    Functional Trainers:
+    - SAP SD: Avinash – Senior SAP SD consultant with 14+ years of experience in global rollouts, pricing, order-to-cash, and logistics execution.
+    - SAP MM: Shams – Specialist with 15+ years in procurement, vendor management, inventory, and SAP MM-S/4HANA implementations.
+    - SAP PP: Poorna – Manufacturing industry expert with 12 years of SAP PP experience in discrete and process manufacturing.
+    - SAP FICO: Parm – Chartered Accountant turned SAP trainer with 18 years of experience in FICO, controlling, and S/4HANA Finance transformations.
+    - SAP EWM: Ramesh – Warehouse operations expert with 11 years of SAP EWM project experience in automation and integration.
+    - SAP MDG: Kavita – Data governance professional with 13+ years of expertise in SAP MDG, master data quality, and harmonization projects.
+    - SAP APO: Nikhil – Specialist in demand planning, SNP, and PP/DS with 10 years of SAP APO project work.
+
+    Technical Trainers:
+    - SAP BTP (All Modules): Anubhav – Renowned SAP trainer with 20+ years of experience across CAP, RAP, Security, Extensibility, and Cloud Integration.
+    - SAP ABAP on HANA: Anubhav – SAP developer with 18+ years in ABAP, HANA optimization, CDS, and AMDP expertise.
+    - SAP UI5 & Fiori: Anubhav – UI/UX consultant with 12 years of experience in building Fiori Elements and freestyle UI5 apps.
+    - SAP Fiori Security: Anubhav – Security and authorization consultant with expertise in PFCG roles, Fiori catalogs/groups, and S/4HANA security models.
+    - SAP RAP: MoAnubhavhan – Specialist in RAP-based development, OData v4 services, and scalable enterprise app delivery.
+    - SAP Build Apps & Process Automation: Swati – Low-code/no-code expert with 9 years of experience in workflow automation and process orchestration.
+    - SAP GenAI & AI Core: Anubhav – AI consultant with 8 years of experience in SAP AI Core, AI Launchpad, and GenAI Hub integrations.
+    - SAP CPI & Integration Suite: Prashant – Integration expert with 12 years in SAP CPI, API Management, and Cloud Integration Suite.
+
+Corporate Customers
+    Anubhav Trainings is a trusted training partner for several global enterprises across industries. Our client base includes:
+        - Bosch Digital
+        - Sony
+        - EY (Ernst & Young)
+        - Capgemini
+        - NVIDIA
+        - Sana Commerce
+        - Mettler Toledo
+        - Barclays
+        - +26 other multinational organizations across IT, Banking, Manufacturing, Retail, and Energy sectors.
+
+Key Strengths OR why to choose Anubhav Trainings
+    - 20+ years of consulting & training expertise.
+    - 10,000+ professionals trained worldwide.
+    - Hands-on case studies and project simulations.
+    - Constantly updated content aligned with latest SAP releases.
+
+Contact Information
+
+    Head Office: Noida, India
+    Website: www.anubhavtrainings.com
+    Email: contact@anubhavtrainings.com
+    Phone: +91-8810504396

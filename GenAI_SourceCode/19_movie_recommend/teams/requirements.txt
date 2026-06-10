@@ -1,0 +1,8 @@
+botbuilder-core
+asyncio
+fastapi
+uvicorn
+requests
+python-dotenv
+loguru
+aiohttp

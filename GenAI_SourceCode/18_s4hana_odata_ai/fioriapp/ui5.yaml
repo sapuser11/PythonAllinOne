@@ -1,0 +1,12 @@
+specVersion: "4.0"
+metadata:
+  name: fioriapp
+type: application
+server:
+  customMiddleware:
+    - name: fiori-tools-proxy
+      afterMiddleware: compression
+      configuration:
+        backend:
+          - path: /chat
+            url: http://localhost:8000

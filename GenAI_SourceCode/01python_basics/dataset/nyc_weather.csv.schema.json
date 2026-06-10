@@ -1,0 +1,62 @@
+{
+  "fields": [
+    {
+      "name": "EST",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "Temperature",
+      "type": "integer",
+      "format": "default"
+    },
+    {
+      "name": "DewPoint",
+      "type": "integer",
+      "format": "default"
+    },
+    {
+      "name": "Humidity",
+      "type": "integer",
+      "format": "default"
+    },
+    {
+      "name": "Sea Level PressureIn",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "VisibilityMiles",
+      "type": "integer",
+      "format": "default"
+    },
+    {
+      "name": "WindSpeedMPH",
+      "type": "integer",
+      "format": "default"
+    },
+    {
+      "name": "PrecipitationIn",
+      "type": "integer",
+      "format": "default"
+    },
+    {
+      "name": "CloudCover",
+      "type": "integer",
+      "format": "default"
+    },
+    {
+      "name": "Events",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "WindDirDegrees",
+      "type": "integer",
+      "format": "default"
+    }
+  ],
+  "missingValues": [
+    ""
+  ]
+}

@@ -1,0 +1,24 @@
+functions = [
+    {
+        "name": "post_analysis",
+        "summary": "Extract information from the social media post",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                
+                "category": {"type": "string", "description": info_dict["category"], 
+                             "enum":['PUBLIC CLEANLINESS','ROADS & FOOTPATHS','FACILITY & PARK MAINTENANCE',
+                                     'PESTS', 'DRAINS & SEWERS','OTHER']},
+                "priority": {"type": "string", "description": info_dict["priority"], 
+                             "enum": ['4-Low','3-Medium', '2-High', '1-Very High'] },
+                "summary": {"type": "string", "description": info_dict["summary"]},
+                "description": {"type": "string", "description": info_dict["description"]},
+                "address": {"type": "string", "description": info_dict["address"]},
+                "location": {"type": "string", "description": info_dict["location"]},
+                "sentiment": {"type": "string", "description": info_dict["sentiment"],
+                              "enum": ['NEUTRAL','NEGATIVE', 'VERY NEGATIVE']},
+            },
+            "required": ["category", "priority"],
+        },
+    }
+]

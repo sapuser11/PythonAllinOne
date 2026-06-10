@@ -1,0 +1,17 @@
+---
+applications:
+- name: heart-beat-api
+  path: ./srv
+  random-route: true
+  buildpacks:
+  - python_buildpack
+  memory: 512M
+  command: uvicorn heart-beat:app --reload --host 0.0.0.0 --port ${PORT}
+
+- name: heart-beat-ui
+  path: ./app
+  random-route: true
+  buildpacks:
+  - python_buildpack
+  memory: 512M
+  command: streamlit run app.py --server.port ${PORT} --server.address 0.0.0.0

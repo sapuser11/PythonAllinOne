@@ -1,0 +1,13 @@
+psycopg2
+python-dotenv
+reportlab
+langchain
+langchain-core
+langchain-community
+langserve
+langchain_openai
+sse_starlette
+streamlit
+plotly
+pandas
+openpyxl

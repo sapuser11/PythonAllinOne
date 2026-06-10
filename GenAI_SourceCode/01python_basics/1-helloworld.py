@@ -1,0 +1,1 @@
+print("Welcome to Anubhav Gen AI training!")

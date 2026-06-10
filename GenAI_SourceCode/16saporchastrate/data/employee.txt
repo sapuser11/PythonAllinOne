@@ -1,0 +1,88 @@
+Anubhav Oberoy 
+
+Professional Summary:
+
+Anubhav Oberoy is a seasoned SAP Solution Architect with over 18 years of experience designing, delivering, and optimizing enterprise SAP solutions for diverse industries. He excels at translating business requirements into technical landscapes and leading cross-functional teams to execute large-scale implementations and continuous improvement initiatives. Known for pragmatic architecture decisions, strong stakeholder management, and an emphasis on clean, maintainable design, Anubhav balances business value with technical excellence.
+
+Contact:
+
+* Email: anubhav.oberoy (mailto:anubhav.abap@gmail.com)
+* Phone: +918448454549
+* Location: Springfield, Anywhere State, USA 
+* LinkedIn: linkedin.com/in/anubhav-oberoy
+
+Core Competencies:
+
+* SAP S/4HANA Architecture & Migration
+* SAP BTP (Business Technology Platform) and Cloud Integrations
+* SAP Fiori/UI5 and Custom UX Solutions
+* ABAP Programming, Performance Tuning, and Code Modernization
+* Integration with 3rd-party systems (API-led integration, CPI, PI/PO)
+* Data Migration, ETL, and Master Data Governance (MDG)
+* Solution Design, Technical Governance, and Architecture Reviews
+* Agile Delivery, DevOps for SAP, and Release Management
+
+Professional Experience:
+
+Senior SAP Solution Architect — Orion Systems Inc. (Fictional)
+April 2020 — Present
+
+* Founder and Trainer at Anubhav Trainings
+* Lead architect for the company’s flagship S/4HANA greenfield implementation across finance, procurement, manufacturing, and logistics modules.
+* Defined the target architecture, migration approach, and cutover strategy that minimized business downtime and reduced post-go-live issues by 40% versus prior projects.
+* Designed an extensibility strategy using SAP BTP for side-by-side extensions and integrated analytic dashboards that allowed business users to self-serve insights.
+* Mentored a team of 10+ consultants and developers, establishing coding standards, CI/CD pipelines, and automated quality checks that improved delivery predictability.
+* Facilitated workshops with C-level stakeholders to prioritize functionality and align IT roadmaps with strategic business outcomes.
+
+SAP Technical Consultant — Meridian Tech Solutions (Fictional)
+June 2015 — March 2020
+
+* Implemented SAP ECC enhancements and led migrations of custom reports and interfaces to a consolidated S/4HANA prototype.
+* Built integrations using SAP PI/PO and modernized interfaces by transitioning to RESTful APIs and cloud middleware for scalability.
+* Collaborated with functional teams to design Master Data processes, improving data quality metrics across the organization.
+
+SAP Developer / Analyst — Apex Business Services (Fictional)
+January 2012 — May 2015
+
+* Developed custom ABAP reports, enhancements, and forms aligned with business requirements.
+* Participated in unit and integration testing, troubleshooting complex issues during SAP upgrade cycles.
+
+Selected Projects (Representative):
+
+1. S/4HANA Greenfield Launch (Manufacturing) — Led architecture and migration team for a global roll-out covering 6 manufacturing sites. Responsibilities included cutover planning, data migration strategy, and custom extension placement decisions.
+2. Cloud Extension Framework — Architected a solution using SAP BTP and Cloud Foundry to host user-facing microservices and Fiori apps. This lowered on-premise change footprint and accelerated feature delivery.
+3. Finance Process Simplification — Executed a finance transformation initiative that consolidated multiple legacy interfaces into a single ledger approach, improving month-end close times by 30%.
+
+Certifications & Training (Fictional / Example):
+
+* SAP Certified Technology Associate — SAP S/4HANA (placeholder)
+* SAP Certified Development Associate — ABAP with SAP NetWeaver (placeholder)
+* SAP BTP Fundamentals (training)
+* Agile Project Management and Scrum Master (training)
+
+Technical Skills:
+
+* Languages: ABAP, SQL, JavaScript (UI5), Python (scripting for automation)
+* Platforms: SAP S/4HANA, SAP ECC, SAP BTP, SAP Fiori/UI5
+* Integration: SAP CPI, PI/PO, REST APIs, OData
+* Tools: Git (CI/CD), Jenkins, Docker (for development pipelines), Postman
+* Databases: SAP HANA, HANA Native Modeling, data migration tools
+
+Education:
+
+* Bachelor of Technology (B.Tech.) in Computer Science — Example Institute of Technology (fictional)
+* Continuous professional education through vendor trainings, workshops, and industry conferences.
+
+Professional Traits & Leadership:
+Anubhav is a collaborative leader who champions pragmatic, business-focused solutions. He prioritizes knowledge sharing and has a track record of building high-performing teams. He values strong documentation, reproducible deployments, and measurable outcomes. In stakeholder settings, he brings clarity and a structured approach to decision-making.
+
+Achievements & Awards (Fictional):
+
+* Recognized with a “Solution Excellence” award at Orion Systems for architecting a reusable extensibility framework that reduced time-to-market for new features by 25%.
+* Led a migration program that achieved go-live on schedule with zero critical post-go-live defects in a pilot region.
+
+Professional Development Goals:
+
+* Deepen expertise in SAP BTP services and event-driven architectures for enterprise-scale extensibility.
+* Continue advancing cloud-native patterns for SAP integrations and promoting low-code approaches for citizen developers.
+* Mentor emerging architects and contribute to open-source tooling for SAP developer productivity.

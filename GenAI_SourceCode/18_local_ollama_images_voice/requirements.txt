@@ -1,0 +1,19 @@
+ollama 
+pillow 
+speechrecognition 
+fastapi 
+uvicorn 
+streamlit 
+audio-recorder-streamlit 
+requests 
+pydub
+python-multipart
+# ollama - Python client for Ollama models
+# pillow - Python Imaging Library for image processing
+# speechrecognition - Library for performing speech recognition
+# fastapi - High-performance web framework for building APIs
+# uvicorn - ASGI server to run FastAPI applications
+# streamlit - Framework for building data apps with simple Python scripts
+# audio-recorder-streamlit - Streamlit component for recording audio
+# requests - HTTP library for making API calls
+# pydub - Audio processing library for manipulating audio files

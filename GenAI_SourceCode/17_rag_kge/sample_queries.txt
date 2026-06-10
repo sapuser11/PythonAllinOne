@@ -1,0 +1,61 @@
+--Q1
+
+SELECT * FROM SPARQL_TABLE(
+	'
+		SELECT * FROM <anubhav_training>
+		WHERE { ?s ?p ?o . 	
+		}
+		ORDER BY (?p)
+		LIMIT 50
+	'
+	
+)
+
+--Q2 : read specific data with subjects
+
+SELECT * FROM SPARQL_TABLE(
+	'
+		SELECT * FROM <anubhav_training>
+		WHERE { ?s ?p ?o . 
+			FILTER(
+				REGEX(str(?s), "http://anubhavtrainings.com/Sap_Hana_Hotspots")
+			)
+			
+		}
+		ORDER BY (?p)
+		LIMIT 50
+	'
+	
+)
+
+--Q3
+
+SELECT * FROM SPARQL_TABLE(
+	'
+		SELECT ?graph (COUNT(*) as ?num_triples)
+		WHERE { GRAPH ?graph { [?p []]}
+			
+		}
+		GROUP BY ?graph
+		LIMIT 50
+	'
+	
+);
+
+
+--Q4
+
+SELECT * FROM SPARQL_TABLE(
+	'
+		PREFIX db: <http://anubhavtrainings.com>
+		SELECT DISTINCT ?class 
+		FROM <anubhav_training>
+		WHERE {
+			?s a ?class
+		}
+	'
+	
+);
+
+--Remove graph
+CALL SPARQL_EXECUTE('DROP GRAPH <anubhav_training>','',?,?)

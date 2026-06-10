@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${cwd}\\19_movie_recommend\\recommender.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Bot Debugging",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "main:app",
+                "--reload",
+                "--host",
+                "0.0.0.0",
+                "--port",
+                "8000"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/18_s4hana_odata_ai_new",
+            "justMyCode": false
+        },
+        {
+            "name": "Anubhav Training app- streamlit",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "streamlit",
+            "args": [
+                "run",
+                "${cwd}//02python_db_usecase//virtual_env//ui//index.py"
+            ],
+            "console": "integratedTerminal",
+            "env": {
+                "STREAMLIT_SERVER_HEADLESS": "true",
+                "PYTHONPATH": "${workspaceFolder}/02python_db_usecase/virtual_env"
+            },
+            "justMyCode": false
+        }
+    ]
+}

@@ -1,0 +1,109 @@
+{
+  "columns": [
+    {
+      "field": "EST",
+      "title": "EST",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "string",
+      "headerSort": true,
+      "width": 78
+    },
+    {
+      "field": "Temperature",
+      "title": "Temperature",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "number",
+      "headerSort": true,
+      "width": 134
+    },
+    {
+      "field": "DewPoint",
+      "title": "DewPoint",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "number",
+      "headerSort": true,
+      "width": 115
+    },
+    {
+      "field": "Humidity",
+      "title": "Humidity",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "number",
+      "headerSort": true,
+      "width": 113
+    },
+    {
+      "field": "Sea Level PressureIn",
+      "title": "Sea Level PressureIn",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "number",
+      "headerSort": true,
+      "width": 181
+    },
+    {
+      "field": "VisibilityMiles",
+      "title": "VisibilityMiles",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "number",
+      "headerSort": true,
+      "width": 140
+    },
+    {
+      "field": "WindSpeedMPH",
+      "title": "WindSpeedMPH",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "number",
+      "headerSort": true,
+      "width": 158
+    },
+    {
+      "field": "PrecipitationIn",
+      "title": "PrecipitationIn",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "number",
+      "headerSort": true,
+      "width": 145
+    },
+    {
+      "field": "CloudCover",
+      "title": "CloudCover",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "number",
+      "headerSort": true,
+      "width": 128
+    },
+    {
+      "field": "Events",
+      "title": "Events",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "string",
+      "headerSort": true,
+      "width": 96
+    },
+    {
+      "field": "WindDirDegrees",
+      "title": "WindDirDegrees",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "number",
+      "headerSort": true,
+      "width": 158
+    }
+  ],
+  "sort": [
+    {
+      "column": "Temperature",
+      "dir": "desc"
+    }
+  ]
+}

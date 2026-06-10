@@ -1,0 +1,12 @@
+langchain
+langchain-community
+langchain-openai
+langchain-core
+sap-ai-sdk-core
+sap-ai-sdk-gen
+cfenv
+langserve
+python-dotenv
+sse_starlette
+streamlit
+uvicorn

@@ -1,0 +1,78 @@
+@prefix db: <http://flight_anubhavtrainings.com/database/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sflight: <http://flight_anubhavtrainings.com/sflight/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sflight:BOOKID a db:Column ;
+    rdfs:label "Booking ID" ;
+    db:aggregationFunction db:COUNT ;
+    db:columnName "BOOKID" ;
+    db:description "Unique booking identifier" ;
+    db:isPrimaryKey true .
+
+sflight:CARRID a db:Column ;
+    rdfs:label "Carrier ID" ;
+    db:columnName "CARRID" ;
+    db:description "Airline carrier identifier" ;
+    db:groupBy true ;
+    db:isPrimaryKey true .
+
+sflight:CLASS a db:Column ;
+    rdfs:label "Class" ;
+    db:columnName "CLASS" ;
+    db:description "Travel class (Economy/Business)" .
+
+sflight:CONNID a db:Column ;
+    rdfs:label "Connection ID" ;
+    db:columnName "CONNID" ;
+    db:description "Flight connection identifier" ;
+    db:isPrimaryKey true .
+
+sflight:CUSTOMID a db:Column ;
+    rdfs:label "Customer ID" ;
+    db:columnName "CUSTOMID" ;
+    db:description "Foreign key to SCUSTOM.ID" ;
+    db:foreignKey sflight:ID ;
+    db:isPrimaryKey true ;
+    db:joinCondition "SBOOK.MANDT = SCUSTOM.MANDT AND SBOOK.CUSTOMID = SCUSTOM.ID" .
+
+sflight:LOCCURAM a db:Column ;
+    rdfs:label "Price" ;
+    db:aggregationFunction db:SUM ;
+    db:columnName "LOCCURAM" ;
+    db:description "Booking price in local currency" .
+
+sflight:MANDT a db:Column ;
+    rdfs:label "Client" ;
+    db:columnName "MANDT" ;
+    db:description "Client identifier" ;
+    db:isPrimaryKey true .
+
+sflight:NAME a db:Column ;
+    rdfs:label "Customer Name" ;
+    db:columnName "NAME" ;
+    db:description "Full name of customer" .
+
+sflight:ORDER_DATE a db:Column ;
+    rdfs:label "Booking Date" ;
+    db:aggregationFunction db:COUNT ;
+    db:columnName "ORDER_DATE" ;
+    db:dataType xsd:string ;
+    db:description "Booking date (VARCHAR format)" ;
+    db:filterFunction "TO_INT(LEFT({column}, 4))" .
+
+sflight:SBOOK a db:Table ;
+    rdfs:label "Flight Bookings" ;
+    db:relatedTo sflight:SCUSTOM ;
+    db:tableName "SBOOK" .
+
+sflight:ID a db:Column ;
+    rdfs:label "Customer ID" ;
+    db:columnName "ID" ;
+    db:description "Primary key for customer" ;
+    db:isPrimaryKey true .
+
+sflight:SCUSTOM a db:Table ;
+    rdfs:label "Customer Details" ;
+    db:tableName "SCUSTOM" .
+

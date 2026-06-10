@@ -1,0 +1,12 @@
+pypdf 
+hdbcli 
+pdfplumber 
+rdflib
+python-dotenv
+langchain
+langchain-core
+langchain-community
+langchain_experimental
+langchain_openai
+PyPDF2
+fitz

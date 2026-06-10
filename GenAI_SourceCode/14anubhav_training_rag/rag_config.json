@@ -1,0 +1,17 @@
+{
+    "text_splitter": {
+        "type": "CharacterTextSplitter",
+        "chunk_size": 500,
+        "chunk_overlap": 20
+    },
+    "llm_settings": {
+        "temperature": 0.8,
+        "top_p": 0.65,
+        "top_k": 78,
+        "max_tokens": 400
+    },
+    "vector_store": {
+        "table_name": "ANUBHAV_TRAININGS1"
+    },
+    "timestamp": "2025-09-02T19:20:35.079292"
+}

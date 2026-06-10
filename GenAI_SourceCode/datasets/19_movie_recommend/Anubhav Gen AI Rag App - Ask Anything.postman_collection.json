@@ -1,0 +1,549 @@
+{
+	"info": {
+		"_postman_id": "450b9443-4310-45d4-8aec-dc45143ff977",
+		"name": "Anubhav Gen AI Rag App - Ask Anything",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14691148"
+	},
+	"item": [
+		{
+			"name": "Test Basic Service Reponse",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "anubhav",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "anubhavtrainings",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4004/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4004",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New File in Vector DB",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "anubhav",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "anubhavtrainings",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"mediaType\": \"application/json\",\r\n  \"fileName\": \"monopoly.pdf\",\r\n  \"size\": \"1049\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4004/odata/v4/embedding-storage/Files",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4004",
+					"path": [
+						"odata",
+						"v4",
+						"embedding-storage",
+						"Files"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update the PDF File to HANA DB",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "anubhav",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "anubhavtrainings",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "file",
+					"file": {
+						"src": "/D:/Anubhav_GetAI_Batch/15_cap_llm_plugin/resources/monopoly.pdf"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4004/odata/v4/embedding-storage/Files(183bdfde-397d-45a3-a9c2-0568eb9dff92)/content",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4004",
+					"path": [
+						"odata",
+						"v4",
+						"embedding-storage",
+						"Files(183bdfde-397d-45a3-a9c2-0568eb9dff92)",
+						"content"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test the stored file",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "anubhav",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "anubhavtrainings",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "file",
+					"file": {
+						"src": "/D:/Anubhav_GetAI_Batch/15_cap_llm_plugin/resources/monopoly.pdf"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4004/odata/v4/embedding-storage/Files(183bdfde-397d-45a3-a9c2-0568eb9dff92)/content",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4004",
+					"path": [
+						"odata",
+						"v4",
+						"embedding-storage",
+						"Files(183bdfde-397d-45a3-a9c2-0568eb9dff92)",
+						"content"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generate Embeddings",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "anubhav",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "anubhavtrainings",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"uuid\": \"183bdfde-397d-45a3-a9c2-0568eb9dff92\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4004/odata/v4/embedding-storage/storeEmbeddings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4004",
+					"path": [
+						"odata",
+						"v4",
+						"embedding-storage",
+						"storeEmbeddings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a conversation",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "anubhav",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "anubhavtrainings",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cID\": \"01234567-89ab-cdef-0123-456789abcdef\",\r\n  \"userID\": \"anubhavtrainings\",\r\n  \"creation_time\": \"2017-04-13T15:51:04.0000000Z\",\r\n  \"last_update_time\": \"2017-04-13T15:51:04.0000000Z\",\r\n  \"title\": \"Anubhav Trainings Chat\",\r\n  \"to_messages\": [\r\n    {\r\n      \"cID_cID\": \"01234567-89ab-cdef-0123-456789abcdef\",\r\n      \"mID\": \"01234567-89ab-cdef-0123-456789abcdef\",\r\n      \"role\": \"user\",\r\n      \"content\": \"sample message\",\r\n      \"creation_time\": \"2017-04-13T15:51:04.0000000Z\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4004/odata/v4/chat/Conversation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4004",
+					"path": [
+						"odata",
+						"v4",
+						"chat",
+						"Conversation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Call using CAP LLM to Vector Cosign LLM calls",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "anubhav",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "anubhavtrainings",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"conversationId\": \"01234567-89ab-cdef-0123-456789abcdef\",\r\n  \"messageId\": \"01234567-89ab-cdef-0123-456789abcdee\",\r\n  \"message_time\": \"2017-04-13T15:51:04.0000000Z\",\r\n  \"user_id\": \"anubhavtrainings\",\r\n  \"user_query\": \"how much money a player can have in monopoly?\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4004/odata/v4/chat/getChatRagResponse",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4004",
+					"path": [
+						"odata",
+						"v4",
+						"chat",
+						"getChatRagResponse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get RAG Response KGE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"question\": \"What is the total revenue and no of bookings in Luftansa\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/ask",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"ask"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Sales Order from SAP Copy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-csrf-Token",
+						"value": "fetch"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bW9iMzp1c2VyQDMzMw=="
+					}
+				],
+				"url": {
+					"raw": "http://stsrvr.mynetgear.com:8021/sap/opu/odata/sap/API_SALES_ORDER_SRV/A_SalesOrder?$top=1&$format=json&$expand=to_Item&$orderby=CreationDate desc",
+					"protocol": "http",
+					"host": [
+						"stsrvr",
+						"mynetgear",
+						"com"
+					],
+					"port": "8021",
+					"path": [
+						"sap",
+						"opu",
+						"odata",
+						"sap",
+						"API_SALES_ORDER_SRV",
+						"A_SalesOrder"
+					],
+					"query": [
+						{
+							"key": "$top",
+							"value": "1"
+						},
+						{
+							"key": "$format",
+							"value": "json"
+						},
+						{
+							"key": "$expand",
+							"value": "to_Item"
+						},
+						{
+							"key": "$orderby",
+							"value": "CreationDate desc"
+						}
+					]
+				},
+				"description": "Fetch The Token from SAP System"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Single order data from S4hana",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-csrf-Token",
+						"value": "fetch"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bW9iMzp1c2VyQDMzMw=="
+					}
+				],
+				"url": {
+					"raw": "http://stsrvr.mynetgear.com:8021/sap/opu/odata/sap/API_SALES_ORDER_SRV/A_SalesOrder('569')?$format=json&$expand=to_Item",
+					"protocol": "http",
+					"host": [
+						"stsrvr",
+						"mynetgear",
+						"com"
+					],
+					"port": "8021",
+					"path": [
+						"sap",
+						"opu",
+						"odata",
+						"sap",
+						"API_SALES_ORDER_SRV",
+						"A_SalesOrder('569')"
+					],
+					"query": [
+						{
+							"key": "$format",
+							"value": "json"
+						},
+						{
+							"key": "$expand",
+							"value": "to_Item"
+						}
+					]
+				},
+				"description": "Fetch The Token from SAP System"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Sales Order in SAP S4HANA",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-csrf-token",
+						"value": "Q5wvMlG2sjWo5Xk40fjFqQ=="
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"SoldToParty\": \"610000\",\n  \"SalesOrganization\": \"CCPL\",\n  \"DistributionChannel\": \"ZG\",\n  \"OrganizationDivision\": \"01\",\n  \"SalesOrderType\": \"OR\",\n  \"SalesOrderDate\": \"/Date(1758972043514)/\",\n  \"to_Item\": {\n    \"results\": [\n      {\n        \"SalesOrderItem\": \"10\",\n        \"Material\": \"167\",\n        \"RequestedQuantity\": \"5\",\n        \"RequestedQuantityUnit\": \"PC\"\n      }\n    ]\n  }\n}"
+				},
+				"url": {
+					"raw": "http://stsrvr.mynetgear.com:8021/sap/opu/odata/sap/API_SALES_ORDER_SRV/A_SalesOrder",
+					"protocol": "http",
+					"host": [
+						"stsrvr",
+						"mynetgear",
+						"com"
+					],
+					"port": "8021",
+					"path": [
+						"sap",
+						"opu",
+						"odata",
+						"sap",
+						"API_SALES_ORDER_SRV",
+						"A_SalesOrder"
+					]
+				},
+				"description": "Create Sales Order from payload"
+			},
+			"response": []
+		},
+		{
+			"name": "Test Movie Recommendation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"query\": \"suggest some action movie from USA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ats-movie-recommend-fancy-serval-ik.cfapps.us10-001.hana.ondemand.com/recommend",
+					"protocol": "https",
+					"host": [
+						"ats-movie-recommend-fancy-serval-ik",
+						"cfapps",
+						"us10-001",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"recommend"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

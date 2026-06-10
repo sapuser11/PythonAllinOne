@@ -1,0 +1,13 @@
+Anubhav Trainings - Onpremise model to process text, image, voice
+go to ollama.com
+download the cli and install
+ollama pull llama3.2-vision
+ollama pull llama3.1
+ollama pull nomic-embed-text
+ollama list
+ollama run lamma3.1:latest
+/bye
+
+Test the app: (in 2 different terminals)
+uvicorn api:app --reload
+streamlit run app.py

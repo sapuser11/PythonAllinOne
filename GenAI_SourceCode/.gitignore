@@ -1,0 +1,14 @@
+02python_db_usecase/virtual_env/etc
+02python_db_usecase/virtual_env/Include
+02python_db_usecase/virtual_env/Scripts
+02python_db_usecase/virtual_env/Lib
+02python_db_usecase/virtual_env/share
+02python_db_usecase/pyenv.cfg
+18_s4hana_odata_ai/fioriapp/node_modules
+18_s4hana_odata_ai_new
+**/demo.pdf
+.env
+.venv
+models/
+__pycache__
+config_anubhav.json

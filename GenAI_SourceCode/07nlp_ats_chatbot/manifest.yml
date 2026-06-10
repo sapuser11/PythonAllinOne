@@ -1,0 +1,17 @@
+---
+applications:
+- name: ats-bot-api
+  path: ./srv
+  random-route: true
+  buildpacks:
+  - python_buildpack
+  memory: 512M
+  command: uvicorn app:app --reload --host 0.0.0.0 --port ${PORT}
+
+- name: ats-bot-ui
+  path: ./app
+  random-route: true
+  buildpacks:
+  - python_buildpack
+  memory: 512M
+  command: streamlit run app.py --server.port ${PORT} --server.address 0.0.0.0

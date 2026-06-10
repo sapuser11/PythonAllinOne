@@ -1,0 +1,33 @@
+info_dict={ 
+"category": 
+'''Classify the post in one of the following categories: \"PUBLIC CLEANLINESS\", \"ROADS & FOOTPATHS\", \
+\"FACILITY & PARK MAINTENANCE\", \"PESTS\", \"DRAINS & SEWERS\".
+If none of the categories fits, return \"OTHER\".''',                 
+
+"priority": 
+'''Identify the priority to be given to the reported issues into \"4-Low\", \"3-Medium\", \"2-High\", \"1-Very High\". .
+    4-Low : the issue does not pose any problem with public safety and does not necessarily need to be handled urgently. 
+    3-Medium : the issue does not cause any immediate danger, but it has significant and negative impact on the daily life of people in the neighborhood.
+    2-High : the issue needs to be resolved quickly because it can potentially cause dangerous situations or disruptions. 
+    1-Very High : the issue needs to be handled as soon as possible, as it is a matter of public safety. 
+    ''',          
+            
+"summary": 
+"Summarize the reported issue in 40 characters and a neutral tone.",
+            
+"description": 
+"Summarize the reported issue in not more that 300 characters and a neutral tone.",
+
+"address":
+"Extract the address where the issue is taking place. Return the street only and omit the town or country",
+            
+"location": 
+"Extract the coordinates where the issue has been notices. The format should be: float, float",
+       
+"sentiment" : 
+'''Classify the sentiment of the post into \"NEUTRAL\", \"NEGATIVE\", \"VERY NEGATIVE\"
+1. NEUTRAL: if the post reports an issue politely, in a calm tone
+2. NEGATIVE: if the post shows irony, impatience, annoyance
+3. VERY NEGATIVE: the post is rude or it expresses rage, hatred towards the public authority
+'''
+}

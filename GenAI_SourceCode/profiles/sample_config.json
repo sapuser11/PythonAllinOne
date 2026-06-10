@@ -1,0 +1,9 @@
+// please rename the file to config_anubhav.json
+
+{
+  "AICORE_AUTH_URL": "https://********.hana.ondemand.com",
+  "AICORE_CLIENT_ID": "sb-*******************",
+  "AICORE_CLIENT_SECRET": "*****-**********=***",
+  "AICORE_RESOURCE_GROUP": "default",
+  "AICORE_BASE_URL": "https://api.ai.***************.ml.hana.ondemand.com/v2"
+}

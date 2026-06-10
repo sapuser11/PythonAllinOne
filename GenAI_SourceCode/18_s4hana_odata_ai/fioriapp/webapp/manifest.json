@@ -1,0 +1,62 @@
+{
+    "sap.app": {
+        "id": "anubhav.ai",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "dataSources": {
+            "restService": {
+                "uri": "/chat/",
+                "type": "JSON"
+            }
+        },
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "sourceTemplate": {
+            "id": "ui5template.basicSAPUI5ApplicationProject",
+            "version": "1.40.12"
+        }
+    },
+    "sap.ui5": {
+        "models": {
+            "": {
+                "type": "sap.ui.model.json.JSONModel",
+                "dataSource": "restService"
+            }
+        },
+        "rootView": {
+            "viewName": "anubhav.ai.view.Main",
+            "type": "XML",
+            "async": true,
+            "id": "app"
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "async": true,
+                "viewPath": "anubhav.ai.view",
+                "controlAggregation": "pages",
+                "controlId": "app"
+            },
+            "routes": [
+                {
+                    "name": "RouteMain",
+                    "pattern": "",
+                    "target": ["TargetMain"]
+                }
+            ],
+            "targets": {
+                "TargetMain": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+                    "viewId": "Main",
+                    "viewName": "Main"
+                }
+            }
+        }
+    }
+}

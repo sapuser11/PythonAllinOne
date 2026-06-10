@@ -1,0 +1,31 @@
+----BEFORE you run anything OR install any module, please activate env  
+.\02python_db_usecase\virtual_env\Scripts\activate
+pip install -r requirements.txt
+
+
+####1. Setup the cloud DaaS from aiven.io for Postgres
+- Install a tool called pgAdmin (a tool to connect to DB) (like it as HANA studio)
+https://www.pgadmin.org/download/pgadmin-4-windows/
+- Setup free account with aiven.io
+- Get your DB connected to your pgAdmin
+- Create a .env file in your project directory and maintain the details as below
+DB_URL="postgres://.......YOUR CONNECTION STRING"
+
+
+####2. To Execute the DB module
+
+python -m venv virtual_env
+.\virtual_env\Scripts\activate
+create the db folder inside the virtual_env folder
+pip install -r requirements.txt
+python init_db.py
+
+###3. Create a UI module and connect to the DB module
+Go inside the virtual_env folder and create a ui
+create index.py and add the streamlit to requirements.txt
+pip install -r requirements.txt
+added the code for ui for testing
+Code-Completion issue: change the interpriter to Windows store
+We add the dependency of DB module and run app
+cd virtual_env
+streamlit run ui/index.py

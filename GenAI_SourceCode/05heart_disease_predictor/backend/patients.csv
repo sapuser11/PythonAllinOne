@@ -1,0 +1,12 @@
+
+name,age,weight,bloodSugar,bloodPressure,smoker,chronic_disease,diabetic,alcoholic
+Alice Johnson,45,65.5,105.0,125.0,0,0,0,0
+Mark Williams,62,85.2,160.0,145.0,1,1,1,0
+Lisa Brown,38,58.0,88.0,108.0,0,0,0,0
+David Miller,71,92.5,180.0,165.0,1,1,1,1
+Emma Davis,29,52.0,82.0,102.0,0,0,0,0
+Robert Wilson,58,88.0,135.0,138.0,1,0,1,1
+Sarah Garcia,49,71.5,118.0,128.0,0,1,0,0
+James Martinez,66,95.0,175.0,158.0,1,1,1,0
+Jennifer Lopez,41,63.2,92.0,115.0,0,0,0,0
+Michael Anderson,54,82.8,142.0,140.0,1,0,1,1

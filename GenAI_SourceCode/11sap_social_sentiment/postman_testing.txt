@@ -1,0 +1,9 @@
+POST http://localhost:8080/genaihub-api/processPost
+
+{
+    "id": "rdt-6666585",
+    "author": "Anurag Bajaj",
+    "title": "Such an amazing experience to be at Auli Himachal",
+    "longText": "We would like to share our amazing trip experience we had in Himachal pradesh at Auli, in winters the white snow covers the mountains and tree which gives real holday vibes, i must say Himachal is really the god's own city We wish to come back again to cherish those memories of mountains, natuire, waterfalls and more. i mean what can we expect more from life simply mesmerizing                                                                            30.52892° N, 79.57026° E",
+    "postingDate": "2025-08-29T00:00:00.000Z"
+}
