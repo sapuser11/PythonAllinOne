@@ -1,9 +1,12 @@
 
 # How many ways to print in python programming give me a example of each
-print("Type of way of Printing in Python - Devendra Singh")
+print("Type of way of Printing in Python Programming")
 print("\n")
 
-# Testing 
+
+"""
+
+
 # 1. Using print() function
 print("Hello World from print() function")
 
@@ -39,3 +42,5 @@ print("Hello World from f-string")
 age = 25
 print("My age is {age}")
 print(f"My age is {age}")
+
+"""
